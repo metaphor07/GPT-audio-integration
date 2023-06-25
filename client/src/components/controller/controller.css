@@ -1,0 +1,140 @@
+.controller {
+  /* overflow: hidden; */
+  background-color: rgb(8, 1, 36);
+  height: 82vh;
+  max-height: max-content;
+  overflow-y: scroll;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* overflow-y: hidden; */
+  height: 100%;
+  max-height: max-content;
+  margin-top: 20px;
+}
+
+.recorder {
+  position: fixed;
+  bottom: 0;
+  width: 79%;
+  /* height: 100px; */
+  padding: 0 0;
+  text-align: center;
+  background: rgb(11, 4, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 4, 135, 1) 0%,
+    rgba(196, 90, 14, 1) 50%,
+    rgba(11, 4, 135, 1) 100%
+  );
+}
+
+.recorder-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  /* height: 96px; */
+}
+
+.chat-container {
+  width: 60vw;
+  margin: 35px auto;
+  /* margin-top: 50px; */
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.left {
+  background-color: lightgreen;
+  align-self: flex-start;
+  width: 360px;
+  max-width: 400px;
+  height: 40px;
+}
+
+.right {
+  background-color: lightblue;
+  align-self: flex-end;
+  width: 100px;
+  max-width: 300px;
+  height: 30px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+}
+.itemBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.btnIcon {
+  font-size: 30px !important;
+  cursor: pointer;
+}
+.content {
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 50px;
+  /* margin-top: 10px; */
+}
+.audioFile {
+  background: transparent;
+}
+
+/* Media Query for 480px */
+@media (max-width: 480px) {
+  .controller {
+    height: 80vh;
+  }
+
+  .recorder {
+    width: 80%;
+  }
+
+  .chat-container {
+    width: 100%;
+  }
+
+  .left {
+    width: 250px;
+    height: 30px;
+    max-width: none;
+  }
+
+  .right {
+    width: 80px;
+    height: 25px;
+
+    max-width: none;
+  }
+  .audioFile {
+    width: 80%;
+    height: 99%;
+    background-color: transparent;
+  }
+  .content {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+}

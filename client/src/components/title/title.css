@@ -1,0 +1,26 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  position: fixed;
+  width: 80%;
+  z-index: 1;
+}
+
+.heading {
+  font-style: italic;
+}
+
+.resetButton {
+  background: transparent;
+  border: none;
+}
+.resetIcon {
+  cursor: pointer;
+}
+.resetIcon:hover {
+  color: red;
+}

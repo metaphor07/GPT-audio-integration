@@ -1,0 +1,48 @@
+.recordButton {
+  background-color: white;
+  padding: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 2px solid rgb(248, 141, 34);
+}
+.recordingBtn {
+  background-color: white;
+  padding: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 2px solid rgb(40, 241, 97);
+}
+.offBtn {
+  background-color: white;
+  padding: 12px;
+  border-radius: 100%;
+  cursor: not-allowed;
+  border: 2px solid rgb(251, 14, 10);
+}
+.micIcon {
+  font-size: 40px !important;
+  color: rgb(248, 141, 34);
+}
+.micRecIcon {
+  font-size: 40px !important;
+  color: rgb(40, 241, 97);
+}
+.micOff {
+  font-size: 40px !important;
+  color: rgb(248, 73, 34);
+}
+
+/* Media Query for 480px */
+@media (max-width: 480px) {
+  .recordButton,
+  .recordingBtn,
+  .offBtn {
+    padding: 10px;
+  }
+
+  .micIcon,
+  .micRecIcon,
+  .micOff {
+    font-size: 30px !important;
+  }
+}
