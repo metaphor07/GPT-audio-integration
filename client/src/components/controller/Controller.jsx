@@ -8,12 +8,13 @@ import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import { SERVER_URL } from "../../helper";
 
 const Controller = () => {
-  // for speak
+  // for speak from the client side, user query
   const { speak } = useSpeechSynthesis();
 
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState([]);
 
+  // when the query is asked by the user it will be called
   const handleStop = async (transcript) => {
     setIsLoading(true);
     axios
@@ -42,7 +43,7 @@ const Controller = () => {
       <Title setMessages={setMessages} />
       {messages?.length < 1 && (
         <h1 className="content">
-          No Conversation Yet! Press & Hold the Mic to start conversation
+          No Conversation Yet! Double-Tap & Hold the Mic to start conversation
         </h1>
       )}
       {messages?.map((data, i) => (
